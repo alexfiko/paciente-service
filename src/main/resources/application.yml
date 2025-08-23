@@ -34,7 +34,7 @@ management:
 
 springdoc:
   swagger-ui:
-    path: /swagger-ui.html
+    path: /patients/swagger-ui.html
     operationsSorter: method
     tagsSorter: alpha
     display-request-duration: true
