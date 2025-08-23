@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: 8082
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://shinkansen.proxy.rlwy.net:48598/railway}
