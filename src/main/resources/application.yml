@@ -7,7 +7,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: ${EUREKA_URL:http://spring-cloud-eureka:8761/eureka} 
     register-with-eureka: true
     fetch-registry: true
   instance:
@@ -40,17 +40,7 @@ springdoc:
     display-request-duration: true
   api-docs:
     path: /v3/api-docs
-  web:
-    base-path: /digital/hospital/patients
-    api-docs:
-      path: /v3/api-docs
-    swagger-ui:
-      path: /swagger-ui.html
-      operationsSorter: method
-      tagsSorter: alpha
-      display-request-duration: true
-    actuator:
-      base-path: /actuator
+
 info:
   app:
     name: paciente Service
