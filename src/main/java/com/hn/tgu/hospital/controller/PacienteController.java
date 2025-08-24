@@ -14,7 +14,7 @@ public class PacienteController {
     @Autowired
     private PacienteService pacienteService;
 
-    @GetMapping
+    @GetMapping("/list")
     public ResponseEntity<List<PacienteDTO>> listarPacientes() {
         return ResponseEntity.ok(pacienteService.listarPacientes());
     }
